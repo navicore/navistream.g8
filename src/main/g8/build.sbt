@@ -15,6 +15,8 @@ scalaVersion := "$scalaVersion$"
 ensimeScalaVersion in ThisBuild := "$scalaVersion$"
 val akkaVersion = "$akkaVersion$"
 
+resolvers += Resolver.sonatypeRepo("snapshots") // for tensorflow
+
 libraryDependencies ++=
   Seq(
     "ch.qos.logback" % "logback-classic" % "1.1.7",
