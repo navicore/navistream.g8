@@ -23,14 +23,6 @@ libraryDependencies ++=
     "com.typesafe" % "config" % "1.2.1",
     "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
 
-    "com.chuusai" %% "shapeless" % "2.3.2",
-
-    "org.platanios" %% "tensorflow" % "0.1.0-SNAPSHOT" classifier "darwin-cpu-x86_64",
-    //"org.platanios" %% "tensorflow" % "0.1.0-SNAPSHOT" classifier "linux-cpu-x86_64",
-
-    "org.scalanlp" %% "breeze" % "0.13.2",
-    "org.scalanlp" %% "breeze-viz" % "0.13.2",
-
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "com.typesafe.akka" %% "akka-stream" % akkaVersion,
 
