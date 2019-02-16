@@ -12,7 +12,6 @@ parallelExecution in test := false
 version := "1.0"
 
 scalaVersion := "$scalaVersion$"
-ensimeScalaVersion in ThisBuild := "$scalaVersion$"
 val akkaVersion = "$akkaVersion$"
 
 resolvers += Resolver.sonatypeRepo("snapshots") // for tensorflow
