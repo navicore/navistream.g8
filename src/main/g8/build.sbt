@@ -9,6 +9,8 @@ javaOptions in test ++= Seq(
 
 parallelExecution in test := false
 
+scalacOptions += "-Ypartial-unification"
+
 version := "1.0"
 
 scalaVersion := "$scalaVersion$"
@@ -20,6 +22,7 @@ libraryDependencies ++=
     "com.typesafe" % "config" % "1.3.3",
     "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
 
+    "org.typelevel" %% "cats-core" % "1.6.0",
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "com.typesafe.akka" %% "akka-stream" % akkaVersion,
 
