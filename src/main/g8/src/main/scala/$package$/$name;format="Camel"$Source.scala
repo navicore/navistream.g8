@@ -6,7 +6,7 @@ import com.typesafe.scalalogging.LazyLogging
 
 class $name;format="Camel"$Source extends GraphStage[SourceShape[(String, Long)]] with LazyLogging {
 
-  val out: Outlet[(String, Long)] = Outlet[(String, Long)]("MySource")
+  val out: Outlet[(String, Long)] = Outlet[(String, Long)]("$name;format="Camel"$Source")
 
   override val shape: SourceShape[(String, Long)] = SourceShape(out)
 
@@ -31,7 +31,7 @@ class $name;format="Camel"$Source extends GraphStage[SourceShape[(String, Long)]
         })
 
       override def preStart(): Unit = {
-        logger.info("starting source")
+        logger.info("starting")
         super.preStart()
       }
     }

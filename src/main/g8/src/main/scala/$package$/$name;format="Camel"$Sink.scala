@@ -6,7 +6,7 @@ import com.typesafe.scalalogging.LazyLogging
 
 class $name;format="Camel"$Sink extends GraphStage[SinkShape[(String, Long)]] with LazyLogging {
 
-  val in: Inlet[(String, Long)] = Inlet.create("MySink.in")
+  val in: Inlet[(String, Long)] = Inlet.create("$name;format="Camel"$Sink.in")
   override def shape(): SinkShape[(String, Long)] = SinkShape.of(in)
 
   override def createLogic(inheritedAttributes: Attributes): GraphStageLogic = {
@@ -36,7 +36,7 @@ class $name;format="Camel"$Sink extends GraphStage[SinkShape[(String, Long)]] wi
       )
 
       override def preStart(): Unit = {
-        logger.info("starting sink")
+        logger.info("starting")
         pull(in)
         super.preStart()
       }
