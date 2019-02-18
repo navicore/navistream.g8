@@ -11,9 +11,9 @@ object Main extends App {
   implicit val materializer: ActorMaterializer = ActorMaterializer(
     ActorMaterializerSettings(actorSystem))
 
-  val src = Source.fromGraph(new $name;format="Camel"$Sink()).throttle(1, 1.seconds)
+  val src = Source.fromGraph(new $name;format="Camel"$Source()).throttle(1, 1.seconds)
 
-  val sink = new $name;format="Camel"$()
+  val sink = new $name;format="Camel"$Sink()
 
   src.runWith(sink)
 
