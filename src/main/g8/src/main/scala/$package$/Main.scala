@@ -7,7 +7,7 @@ import scala.concurrent.duration._
 
 object Main extends App {
 
-  implicit val actorSystem: ActorSystem = ActorSystem("example")
+  implicit val actorSystem: ActorSystem = ActorSystem("$name;format="Camel"$System")
   implicit val materializer: ActorMaterializer = ActorMaterializer(
     ActorMaterializerSettings(actorSystem))
 
