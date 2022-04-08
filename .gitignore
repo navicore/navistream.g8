@@ -6,3 +6,6 @@ project/plugins/project/
 .idea/
 .ensime
 .ensime-cache/
+.scalafmt.conf
+project/metals.sbt
+project/project/
